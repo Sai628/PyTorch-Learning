@@ -53,3 +53,6 @@ venv
 
 # jupyter notebook
 .ipynb_checkpoints
+
+# data folder
+chapter_dogvscat/data
