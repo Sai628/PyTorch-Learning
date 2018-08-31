@@ -55,9 +55,7 @@ venv
 .ipynb_checkpoints
 
 # data folder
-chapter_dogvscat/data/*
-!chapter_dogvscat/data/.gitkeep
-
-# checkpoints folder
-chapter_dogvscat/checkpoints/*
-!chapter_dogvscat/checkpoints/.gitkeep
+chapter06_dogvscat/data/*
+!chapter06_dogvscat/data/.gitkeep
+chapter07_gan/data/*
+!chapter07_gan/data/.gitkeep
