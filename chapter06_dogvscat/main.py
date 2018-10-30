@@ -152,7 +152,7 @@ def write_csv(results, file_name):
     with open(file_name, 'w') as f:
         writer = csv.writer(f)
         writer.writerow(['id', 'label'])
-        writer.writerow(results)
+        writer.writerows(results)
 
 
 def help():
