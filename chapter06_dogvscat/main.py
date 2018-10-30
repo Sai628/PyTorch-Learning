@@ -140,7 +140,7 @@ def test(**kwargs):
             input = input.cuda()
         score = model(input)
         probability = F.softmax(score)[:, 1].data.tolist()
-        batch_results = [(path_, probability_) for path_, probability_ in zip(path, probability)]
+        batch_results = [(path_.data.item(), probability_) for path_, probability_ in zip(path, probability)]
         results += batch_results
 
     write_csv(results, opt.result_file)
