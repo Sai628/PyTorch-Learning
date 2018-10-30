@@ -15,7 +15,7 @@ class BasicModule(nn.Module):
         self.model_name = str(type(self))
 
     def load(self, path):
-        self.load_state_dict(t.load(path))
+        self.load_state_dict(t.load(path, map_location=t.device('cpu')))
 
     def save(self, name=None):
         """
