@@ -61,3 +61,5 @@ chapter07_gan/data/*
 !chapter07_gan/data/.gitkeep
 chapter07_gan/imgs/*
 !chapter07_gan/imgs/.gitkeep
+chapter08_neural_style/data/*
+!chapter08_neural_style/data/.gitkeep
