@@ -41,8 +41,8 @@ class DefaultConfig(object):
 
 def parse(self, kwargs):
     """
-        根据字典 kwargs 更新 config 参数
-        """
+    根据字典 kwargs 更新 config 参数
+    """
     for k, v in kwargs.items():
         if not hasattr(self, k):
             warnings.warn("Warning: opt has not attribute %s" % k)
