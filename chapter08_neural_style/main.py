@@ -86,7 +86,7 @@ def train(**kwargs):
 
             # style loss
             style_loss = 0.0
-            for ft_y, gm_s in zip(features_style, gram_style):
+            for ft_y, gm_s in zip(features_y, gram_style):
                 gram_y = utils.gram_matrix(ft_y)
                 style_loss += F.mse_loss(gram_y, gm_s.expand_as(gram_y))
             style_loss *= opt.style_weight
