@@ -24,7 +24,7 @@ class DefaultConfig(object):
 
     debug_file = '/tmp/debuggan' # 存在该文件则进入debug模式
     d_every = 1  # 每1个batch训练一次判别器
-    g_every = 5  # 每5个batch训练一次判别器
+    g_every = 5  # 每5个batch训练一次生别器
     decay_every = 10  # 每10个epoch保存一次模型
     netd_path = None  # 'checkpoints/netd_xxx.pth' 预训练判别器模型路径
     netg_path = None  # 'checkpoints/netg_xxx.pth'  预训练生成器模型路径
